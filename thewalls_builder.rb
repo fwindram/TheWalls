@@ -2,12 +2,17 @@
 require 'squib'
 # require 'game_icons'
 
-# data = xlsx file: 'E:\Francis\Games\TheWallsConcept.xlsx'   # Needs to be wrapped in a Squib tag
-data = Squib.csv file: 'TheWallsConcept.csv'
-
-buildstring = Time.now.strftime("%d%m%y%H%M")   # Create buildstring
+buildstring = Time.now.strftime('%d%m%y%H%M')   # Create buildstring
 pdfgen = true
 state = 'Alpha'
+tcgrun = true
+
+if tcgrun
+  data = Squib.csv file: 'TheWallsConcept_gcready.csv'
+  pdfgen = false
+else
+  data = Squib.csv file: 'TheWallsConcept.csv'
+end
 
 Squib::Deck.new cards: data['Title'].size, layout: 'layout.yml' do
   background color: 'white'
