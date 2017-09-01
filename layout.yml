@@ -103,5 +103,5 @@ safe:
   y: 75
   width: 675
   height: 975
-  radius: 16
+  radius: 48
   fill_color: '#ffffff' # Overwrite above black square with white.
