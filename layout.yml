@@ -1,43 +1,49 @@
-#This layout inspired by popular economy games
+# The Walls B&W concept layout
+
+# Text classes
+alltext:
+  align: center
+  font: Calibri
+
 title:
+  extends: alltext
   x: 90
   y: 120
   width: 635
   height: 50
-  font: Calibri bold 36
-  align: center
+  font: Calibri bold 42
+
+type:
+  extends: alltext
+  x: 90
+  y: 200
+  width: 625
+  font_size: 32
 
 effect:
+  extends: alltext
   x: 90
-  y: 180
+  y: 240
   width: 625
-  align: center
-  font: Calibri italic 24
-  font_size: 18
-
-art:
-  x: 75
-  y: 150
-  width: 675
-  height: 520
+  font: Calibri italic
+  font_size: 24
 
 description:
+  extends: alltext
   x: 100
-  y: 675
+  y: 650
   width: 625
-  height: 275
-  valign: middle
-  align: center
-  font_size: 18
+  height: 100
+  font: Calibri bold italic
+  font_size: 24
 desc: # alias
   extends: description
 
-type:
-  x: 90
-  y: 955
-  width: 645
-  height: 50
-  align: center
+details:
+  extends: description
+  y: += 120
+  height: 250
+  font: Calibri italic
 
 lower_right:
   x: 675
@@ -67,7 +73,6 @@ copyright:
   width: 675
   height: 25
   font_size: 16
-  align: center
   valign: bottom
 #aliases for copyright
 copy:
@@ -76,6 +81,13 @@ credit:
   extends: copyright
 credits:
   extends: copyright
+
+# Artwork
+art:
+  x: 75
+  y: 150
+  width: 675
+  height: 520
 
 # The "cut line", without rounded corners
 cut:
@@ -92,4 +104,4 @@ safe:
   width: 675
   height: 975
   radius: 16
-  fill_color: '#ffffff'
+  fill_color: '#ffffff' # Overwrite above black square with white.
