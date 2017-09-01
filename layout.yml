@@ -16,9 +16,9 @@ title:
 type:
   extends: alltext
   x: 90
-  y: 190
+  y: 180
   width: 625
-  font_size: 32
+  font_size: 28
 
 effect:
   extends: alltext
@@ -26,22 +26,22 @@ effect:
   y: 240
   width: 625
   font: Calibri italic
-  font_size: 24
+  font_size: 22
 
 description:
   extends: alltext
   x: 100
-  y: 650
+  y: 680
   width: 625
   height: 100
   font: Calibri bold italic
-  font_size: 24
+  font_size: 22
 desc: # alias
   extends: description
 
 details:
   extends: description
-  y: += 100
+  y: += 80
   height: 250
   font: Calibri italic
 
@@ -84,10 +84,10 @@ credits:
 
 # Artwork
 art:
-  x: 75
-  y: 150
-  width: 675
-  height: 520
+  x: 262.5
+  y: 310
+  width: 300
+  height: 300
 
 # The "cut line", without rounded corners
 cut:

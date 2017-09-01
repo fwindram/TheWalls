@@ -43,3 +43,4 @@ Thumbs.db
 *.lock
 *.csv
 testdecks/
+svg/
