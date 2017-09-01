@@ -68,11 +68,11 @@ ll: # alias
   extends: lower_left
 
 copyright:
-  x: 75
+  x: 120
   y: 1025
   width: 675
   height: 25
-  font_size: 16
+  font_size: 10
   valign: bottom
 #aliases for copyright
 copy:
