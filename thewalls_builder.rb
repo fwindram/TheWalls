@@ -28,6 +28,6 @@ Squib::Deck.new cards: data['Title'].size, layout: 'layout.yml' do
   # Build cards
   save_png dir: "testdecks/build_#{buildstring}"
   if pdfgen
-    save_pdf file: "thewalls_build_#{buildstring}", dir: "testdecks/build_#{buildstring}", trim: 37.5
+    save_pdf file: "thewalls_build_#{buildstring}.pdf", dir: "testdecks/build_#{buildstring}", trim: 37.5
   end
 end
