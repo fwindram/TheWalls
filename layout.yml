@@ -16,7 +16,7 @@ title:
 type:
   extends: alltext
   x: 90
-  y: 200
+  y: 190
   width: 625
   font_size: 32
 
@@ -41,7 +41,7 @@ desc: # alias
 
 details:
   extends: description
-  y: += 120
+  y: += 100
   height: 250
   font: Calibri italic
 

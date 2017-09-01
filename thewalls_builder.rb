@@ -16,5 +16,5 @@ Squib::Deck.new cards: data['Title'].size, layout: 'layout.yml' do
   text str: data['Effect'], layout: 'effect'
   text str: data['Description'], layout: 'description'
   text str: data['Details'], layout: 'details'
-  save_png dir: "E:/Francis/Games/TheWallsConcept/Testdecks/build_#{buildstring}"
+  save_png dir: "testdecks/build_#{buildstring}"
 end
